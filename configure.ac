@@ -494,6 +494,14 @@ dnl CPU_TYPE=ppc64
     SHRLIB_EXT=dll
     ;;
 
+  *-*-cygwin*)
+    MAKEFILE_PREFIX=mingw
+    PLATFORM=win32
+    EDITLINE_FLG=N
+    RAW_DEVICES_FLG=N
+    SHRLIB_EXT=dll
+    ;;
+
   *)
     AC_MSG_ERROR(unsupported platform ${build})
     ;;
